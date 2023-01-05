@@ -14,8 +14,11 @@
     "singleQuote": true
   },
   "dependencies": {
+    "@emailjs/browser": "3.10.0",
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
+    "@fontsource/roboto": "4.5.8",
+    "@mui/icons-material": "5.11.0",
     "@mui/material": "5.11.3",
     "clsx": "1.2.1",
     "next": "latest",
@@ -23,6 +26,7 @@
     "react-dom": "18.2.0",
     "styled-components": "6.0.0-beta.2",
     "styled-jsx": "5.1.0",
+    "swiper": "8.4.5",
     "use-count-up": "3.0.1"
   },
   "devDependencies": {
