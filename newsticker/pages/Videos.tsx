@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import VideosToday from '../components/Videos/VideosToday';
-import VideosHead from '../components/Videos/VideosHead';
-import AdVideosToday from '../components/Videos/AdVideosToday';
+import VideosToday from './modules/components/Videos/VideosToday';
+import VideosHead from './modules/components/Videos/VideosHead';
+import AdVideosToday from './modules/components/Videos/AdVideosToday';
 
 const mainContainer = {
     display: 'flex, block',

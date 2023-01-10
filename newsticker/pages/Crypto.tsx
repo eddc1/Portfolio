@@ -2,16 +2,16 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import Typography from '../components/theme/Typography';
+import Typography from './modules/components/theme/Typography';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import CryptoTest from '../components/crypto/CryptoTest';
-import Cryptoubersicht from '../components/crypto/Cryptoubersicht';
-import CryptoPreviews from '../components/crypto/CryptoPreviews';
-import CryptoHitlisten from '../components/crypto/CryptoHitlisten';
-import CryptoKolumnen from '../components/crypto/CryptoKolumnen';
-import CryptoSpecials from '../components/crypto/CryptoSpecials';
-import CryptoGuides from '../components/crypto/CryptoGuides';
+import CryptoTest from './modules/components/crypto/CryptoTest';
+import Cryptoubersicht from './modules/components/crypto/Cryptoubersicht';
+import CryptoPreviews from './modules/components/crypto/CryptoPreviews';
+import CryptoHitlisten from './modules/components/crypto/CryptoHitlisten';
+import CryptoKolumnen from './modules/components/crypto/CryptoKolumnen';
+import CryptoSpecials from './modules/components/crypto/CryptoSpecials';
+import CryptoGuides from './modules/components/crypto/CryptoGuides';
 
 const box = {
   flexGrow: 1,

@@ -1,15 +1,15 @@
 import { Box } from '@mui/material';
 import Container from '@mui/material/Container';
-import TechToday from '../components/tech/TechToday';
-import TechHead from '../components/tech/TechHead';
-import TechPcGaming from '../components/tech/TechPcGaming';
-import TechSmarphones from '../components/tech/TechSmarphones';
-import TechGadgetsTrends from '../components/tech/TechGadgetsTrends';
-import TechWindows from '../components/tech/TechWindows';
-import TechDeals from '../components/tech/TechDeals';
-import TechTest from '../components/tech/TechTest';
-import TechKaufratgeber from '../components/tech/TechKaufratgeber';
-import TechGuides from '../components/tech/TechGuides';
+import TechToday from './modules/components/tech/TechToday';
+import TechHead from './modules/components/tech/TechHead';
+import TechPcGaming from './modules/components/tech/TechPcGaming';
+import TechSmarphones from './modules/components/tech/TechSmarphones';
+import TechGadgetsTrends from './modules/components/tech/TechGadgetsTrends';
+import TechWindows from './modules/components/tech/TechWindows';
+import TechDeals from './modules/components/tech/TechDeals';
+import TechTest from './modules/components/tech/TechTest';
+import TechKaufratgeber from './modules/components/tech/TechKaufratgeber';
+import TechGuides from './modules/components/tech/TechGuides';
 
 const mainContainer = {
     display: 'flex, block',

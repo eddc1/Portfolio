@@ -2,14 +2,14 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import Typography from '../components/theme/Typography';
+import Typography from './modules/components/theme/Typography';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import NewsTicker from '../components/News/NewsTicker/NewsTicker';
-import TopNews from '../components/News/NewsTicker/TopNews';
-import GameList from '../components/News/NewsTicker/GameList';
-import TechList from '../components/News/NewsTicker/TechList';
-import VideoList from '../components/News/NewsTicker/VideoList';
+import NewsTicker from './modules/components/News/NewsTicker/NewsTicker';
+import TopNews from './modules/components/News/NewsTicker/TopNews';
+import GameList from './modules/components/News/NewsTicker/GameList';
+import TechList from './modules/components/News/NewsTicker/TechList';
+import VideoList from './modules/components/News/NewsTicker/VideoList';
 
 const box = {
   flexGrow: 1,

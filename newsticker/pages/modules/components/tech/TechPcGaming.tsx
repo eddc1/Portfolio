@@ -2,7 +2,7 @@ import { Box, ButtonBase, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../theme/Typography';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const mainContainer = {
     display: 'flex, block',
@@ -111,7 +111,7 @@ function TechPcGaming() {
                                     {`${item.text}`}
                                     </Typography>
                                     <Button 
-                                    component={Link} to="/News"
+                                    component={Link} href="/News"
                                     sx={btn}
                                     onClick={() => console.log('Go to News')}
                                     type="submit"

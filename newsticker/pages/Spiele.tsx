@@ -8,7 +8,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-import AdGames from '../components/games/AdGames';
+import AdGames from './modules/components/games/AdGames'
 
 const box = {
   flexGrow: 1,
