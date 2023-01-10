@@ -2,16 +2,16 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import Typography from '../components/theme/Typography';
+import Typography from './modules/components/theme/Typography';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import ArtikelTest from '../components/article/ArtikelTest';
-import Artikelubersicht from '../components/article/Artikelubersicht';
-import ArtikelPreviews from '../components/article/ArtikelPreviews';
-import ArtikelHitlisten from '../components/article/ArtikelHitlisten';
-import ArtikelKolumnen from '../components/article/ArtikelKolumnen';
-import ArtikelSpecials from '../components/article/ArtikelSpecials';
-import ArtikelGuides from '../components/article/ArtikelGuides';
+import ArtikelTest from './modules/components/article/ArtikelTest';
+import Artikelubersicht from './modules/components/article/Artikelubersicht';
+import ArtikelPreviews from './modules/components/article/ArtikelPreviews';
+import ArtikelHitlisten from './modules/components/article/ArtikelHitlisten';
+import ArtikelKolumnen from './modules/components/article/ArtikelKolumnen';
+import ArtikelSpecials from './modules/components/article/ArtikelSpecials';
+import ArtikelGuides from './modules/components/article/ArtikelGuides';
 
 const box = {
   flexGrow: 1,
