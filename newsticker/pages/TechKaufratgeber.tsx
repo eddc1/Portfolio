@@ -25,10 +25,15 @@ const box = {
     justifyContent: 'center',
     justifyItem: 'center',
         button: {
-        width: '100%',
-        height: 'auto',
-        objectFit: 'cover',
+          width: '100%',
+          height: 'auto',
+          objectFit: 'cover',
         },
+        articles: {
+          borderBottom: '1px solid #303f9f',
+          paddingBottom: 1,
+        }
+    
 }
 
 const btn = {
@@ -68,21 +73,15 @@ const btnbase = {
 
 
 
-function VideosHead() {
+function TechKaufratgeber() {
   return (
     <Container sx={mainContainer}> 
         <Box
         component="section"
         sx={box}>
-            
-                <Grid sx={{ pb: 4 }}>
-                    <Grid item xs={12}>
-                        <Typography variant='subtitle1'>GameStar Videos: alle Shows, Trailer &amp; Kanäle</Typography>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Typography sx={typography} variant='body1'>Auf unserer Video-Übersicht findest du alle Videos der GameStar-Redaktion (Tests, Previews, Events bzw. alle redaktionellen Videos) sowie aktuelle Trailer zu Spielen und Kino-Filmen. Zusätzlich gibt es regelmäßige Shows, Special-Formate und Videos von ausgewählten Partner-Kanälen.</Typography>
-                    </Grid>
-                </Grid>
+            <Grid sx={{ pb: 4 }} xs={12}>
+              <Typography variant='subtitle1' sx={box}>Kaufratgeber</Typography>
+            </Grid>
             <Grid container
                 direction="row"
                 justifyContent="center"
@@ -126,6 +125,7 @@ function VideosHead() {
                         </Grid>
                 ))}
                     <Grid 
+                            sx={box.articles}
                             container
                             direction="row"
                             justifyContent="center"
@@ -142,9 +142,6 @@ function VideosHead() {
                                 <Typography variant="subtitle2" pt={2}>
                                 {`${item.title}`}
                                 </Typography>
-                                <Typography sx={typography}>                
-                                {`${item.text}`}
-                                </Typography>
                             </Box>
                         </Grid>
                         ))}
@@ -155,39 +152,39 @@ function VideosHead() {
   );
 }
 
+
+
 const topHeaderData = [
     {
-      img: 'https://images.cgames.de/images/gamestar/210/gs-steam-most-wanted_6146235.jpg',
-      title: 'Steam Wunschliste: Die aktuell meistgewünschten PC-Spiele',
-      text: 'Steam Most Wanted: Welche kommenden PC-Spiele werden am heißesten erwartet? Wir haben für euch die Top 15 der am meisten gewünschten Steam-Spiele zusammengefasst.',
+      img: 'https://images.cgames.de/images/gamestar/210/wd-black-gaming-ssd-pc-ps5_6200034.jpg',
+      title: 'Die besten Webcams für PC-Spieler und Streamer - Kaufberatung',
+      text: 'Spieler und Streamer brauchen Webcams, allerdings haben beide Gruppen unterschiedliche Ansprüche. Wir empfehlen die beste Webcam für jeden Zweck ab 20 Euro.',
     },
   ];
   
 
 const itemData = [
     /*!-- 
+     <Typography variant='subtitle1' sx={box.headline}>Freitag, 30.09.2022</Typography>
       img: 'https://images.cgames.de/images/gamestar/210/gs-steam-most-wanted_6146235.jpg',
       title: 'Steam Wunschliste: Die aktuell meistgewünschten PC-Spiele',
       text: 'Steam Most Wanted: Welche kommenden PC-Spiele werden am heißesten erwartet? Wir haben für euch die Top 15 der am meisten gewünschten Steam-Spiele zusammengefasst.',
     }, 
     --!*/
     {
-      img: 'https://images.cgames.de/images/gamestar/256/desktopia-_6190825.jpg',
-      title: 'Desktopia: Dieses Mittelalter-Aufbauspiel ergibt keinen Sinn',
-      text: 'Ein Mittelalterdorf am Bildschirmrand hochziehen, während wir Filme schauen oder im Netz surfen? Klingt spaßig, hat aber ein riesiges Problem.',
+      img: 'https://images.cgames.de/images/gamestar/256/ergo1_6188705.jpg',
+      title: 'Ergonomisches Arbeiten im Home Office: Kaufberatung mit Bürostühlen, Mäusen, Tastaturen und mehr',
     },
     {
-      img: 'https://images.cgames.de/images/gamestar/256/raft_6188337.jpg',
-      title: 'Ein neues Herr-der-Ringe-Spiel kommt von einem spannenden Studio',
-      text: 'Der Publisher Private Division kündigt an, dass ein Spiel in Tolkiens Welt geplant ist. Und das könnte sogar schon nächstes Jahr erscheinen.',
+      img: 'https://images.cgames.de/images/gamestar/256/balkonkraftwerk-%C3%BCber-600w-teaser_6199911.jpg',
+      title: 'Saugroboter Kaufberatung: Die besten Modelle überhaupt',
     },
     {
-      img: 'https://images.cgames.de/images/gamestar/256/two-point-campus-anzeige-titel01_6187955.jpg',
-      title: 'Die besten Mittelalter-Spiele: 22 historische Meilensteine',
-      text: 'Von Aufbauspielen über Echtzeitstrategie bis hin zu Multiplayer-Action: Das Mittelalter hat einige unserer liebsten Spiele hervorgebracht.',
+      img: 'https://images.cgames.de/images/gamestar/256/satur…ot-samsung-4k-tv-zum-bestpreis-kaufen_6199761.jpg',
+      title: 'Die besten Gaming-Headsets und Kopfhörer für Spieler - Kaufberatung',
     },
   ];
 
   
 
-export default VideosHead;
+export default TechKaufratgeber;

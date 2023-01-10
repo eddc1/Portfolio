@@ -103,7 +103,7 @@ function Options() {
                   />
                 </Search>
               </Grid>
-              <Grid xs={12} sx={{ flexGrow: 1 }} spacing={2} container direction="row" justifyContent="center" alignItems="center">
+              <Grid sx={{ flexGrow: 1 }} spacing={2} container direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={4}>
                   <FormControl fullWidth>
                     <InputLabel id="demo-multiple-name-label">Genre</InputLabel>
@@ -179,7 +179,7 @@ function Options() {
                   </FormControl>
                 </Grid>
               </Grid>
-              <Grid xs={12} sx={{ flexGrow: 1, mt: 1 }} spacing={2} container direction="row" justifyContent="space-between" >
+              <Grid sx={{ flexGrow: 1, mt: 1 }} spacing={2} container direction="row" justifyContent="space-between" >
                 <Grid item xs={3}>
                   <Typography variant="h6">9845 Einträge</Typography>
                 </Grid>

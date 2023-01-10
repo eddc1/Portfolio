@@ -102,7 +102,7 @@ function AdGames() {
                             <Box sx={{ width: 'auto', height: 'auto',  paddingTop: 2, paddingBottom: 2 }}>
                                 {contentListTopArtikel.map((item) => (
                                     <Grid item container direction="row" sx={{ }}>
-                                        <ListItemButton key={item.text}>
+                                        <ListItemButton>
                                             <Grid item sx={{ pr: 2 }}>
                                                 <Typography sx={{ color: '#303f9f' }} variant='subtitle1'>{`${item.number}`}</Typography>
                                             </Grid>
@@ -145,7 +145,7 @@ function AdGames() {
                             <Box sx={{ width: 'auto', height: 'auto',  paddingTop: 2, paddingBottom: 2 }}>
                                 {contentListTopArtikelVideo.map((item) => (
                                     <Grid item container direction="row">
-                                        <ListItemButton key={item.text}>
+                                        <ListItemButton>
                                             <Grid item xs={12} sx={{ pr: 2 }}>
                                                 <ButtonBase sx={{ width: 'auto', height: 'auto' }}>
                                                     <Img alt="Wow" src={`${item.image}`}>

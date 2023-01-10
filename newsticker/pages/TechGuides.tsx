@@ -48,14 +48,14 @@ const grid = {
 
 
 
-function TechToday() {
+function TechGuides() {
   return (
     <Container sx={mainContainer}> 
         <Box
         component="section"
         sx={box}>
-                <Grid sx={{ pb: 4 }}>
-                    <Typography variant='subtitle1' sx={box}>Aktuell</Typography>
+                <Grid sx={{ pb: 4 }} xs={12}>
+                    <Typography variant='subtitle1' sx={box}>Guides</Typography>
                 </Grid>
             <Grid container
                 direction="row"
@@ -102,31 +102,19 @@ const itemData = [
     }, 
     --!*/
     {
-      img: 'https://images.cgames.de/images/gamestar/256/balkonkraftwerk-aufbau-teaser_6199976.jpg',
-      title: 'Balkonkraftwerk installieren - So gehts in nur 8 Schritten',
+      img: 'https://images.cgames.de/images/gamestar/256/iphone-notification-teaser_6199656.jpg',
+      title: 'iOS 16 Benachrichtigungen: Was ihr am Sperrbildschirm ändern könnt - und was nicht',
     },
     {
-      img: 'https://images.cgames.de/images/gamestar/256/google-samsung-smartthings_6199905.jpg',
-      title: 'Schluss mit Smarthome-Inseln: Samsung und Google arbeiten dank Matter bald zusammen',
+      img: 'https://images.cgames.de/images/gamestar/256/alexa-app-und-echo_6199479.jpg',
+      title: 'Alexa umbenennen: So ändert ihr den Namen eures Echo-Gerätes',
     },
     {
-      img: 'https://images.cgames.de/images/gamestar/256/netflix-basisabomitwerbung-teaserbild_6199906.jpg',
-      title: 'Neues Netflix-Abo: Günstigstes Bezahl-Modell bis jetzt und doch bezahlt ihr teuer',
-    },
-    {
-      img: 'https://images.cgames.de/images/gamestar/256/one-ui-5-teaser_6199900.jpg',
-      title: 'Samsung One UI 5: Update kommt mit cleveren Funktionen, die ihr auch von Apple kennt',
-    },
-    {
-      img: 'https://images.cgames.de/images/gamestar/256/xbox-cloud-gaming-test-teaser_6199629.jpg',
-      title: 'Xbox Cloud Gaming ausprobiert: Wie gut laufen Spiele-Hits über den Browser?',
-    },
-    {
-      img: 'https://images.cgames.de/images/gamestar/256/besten-webcams-teaser_6190711.jpg',
-      title: 'Die besten Webcams für PC-Spieler und Streamer - Kaufberatung',
-    },
+      img: 'https://images.cgames.de/images/gamestar/256/iphone-screenshot-teaser_6198930.jpg',
+      title: 'Apple iOS 16: Screenshots auf dem iPhone sind nützlicher, als ihr vielleicht denkt - Hier sind fünf Tipps',
+    }
   ];
 
   
 
-export default TechToday;
+export default TechGuides;

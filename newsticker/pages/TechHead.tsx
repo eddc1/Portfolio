@@ -25,10 +25,15 @@ const box = {
     justifyContent: 'center',
     justifyItem: 'center',
         button: {
-        width: '100%',
-        height: 'auto',
-        objectFit: 'cover',
+          width: '100%',
+          height: 'auto',
+          objectFit: 'cover',
         },
+        articles: {
+          borderBottom: '1px solid #303f9f',
+          paddingBottom: 1,
+        }
+    
 }
 
 const btn = {
@@ -68,21 +73,12 @@ const btnbase = {
 
 
 
-function VideosHead() {
+function TechHead() {
   return (
     <Container sx={mainContainer}> 
         <Box
         component="section"
         sx={box}>
-            
-                <Grid sx={{ pb: 4 }}>
-                    <Grid item xs={12}>
-                        <Typography variant='subtitle1'>GameStar Videos: alle Shows, Trailer &amp; Kanäle</Typography>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Typography sx={typography} variant='body1'>Auf unserer Video-Übersicht findest du alle Videos der GameStar-Redaktion (Tests, Previews, Events bzw. alle redaktionellen Videos) sowie aktuelle Trailer zu Spielen und Kino-Filmen. Zusätzlich gibt es regelmäßige Shows, Special-Formate und Videos von ausgewählten Partner-Kanälen.</Typography>
-                    </Grid>
-                </Grid>
             <Grid container
                 direction="row"
                 justifyContent="center"
@@ -126,6 +122,7 @@ function VideosHead() {
                         </Grid>
                 ))}
                     <Grid 
+                            sx={box.articles}
                             container
                             direction="row"
                             justifyContent="center"
@@ -142,9 +139,6 @@ function VideosHead() {
                                 <Typography variant="subtitle2" pt={2}>
                                 {`${item.title}`}
                                 </Typography>
-                                <Typography sx={typography}>                
-                                {`${item.text}`}
-                                </Typography>
                             </Box>
                         </Grid>
                         ))}
@@ -155,39 +149,39 @@ function VideosHead() {
   );
 }
 
+
+
 const topHeaderData = [
     {
-      img: 'https://images.cgames.de/images/gamestar/210/gs-steam-most-wanted_6146235.jpg',
-      title: 'Steam Wunschliste: Die aktuell meistgewünschten PC-Spiele',
-      text: 'Steam Most Wanted: Welche kommenden PC-Spiele werden am heißesten erwartet? Wir haben für euch die Top 15 der am meisten gewünschten Steam-Spiele zusammengefasst.',
+      img: 'https://images.cgames.de/images/gamestar/210/rtx-4090-verkaufsstart-teaser_6199408.jpg',
+      title: 'Geforce RTX 4090 kaufen: Die Geschichte droht, sich zu wiederholen',
+      text: 'Ab heute könnt ihr Nvidias neue Geforce RTX 4090 vorbestellen und kaufen, zumindest    theoretisch. Zum Release gestaltet sich die Verfügbarkeit aber eher schwierig.',
     },
   ];
   
 
 const itemData = [
     /*!-- 
+     <Typography variant='subtitle1' sx={box.headline}>Freitag, 30.09.2022</Typography>
       img: 'https://images.cgames.de/images/gamestar/210/gs-steam-most-wanted_6146235.jpg',
       title: 'Steam Wunschliste: Die aktuell meistgewünschten PC-Spiele',
       text: 'Steam Most Wanted: Welche kommenden PC-Spiele werden am heißesten erwartet? Wir haben für euch die Top 15 der am meisten gewünschten Steam-Spiele zusammengefasst.',
     }, 
     --!*/
     {
-      img: 'https://images.cgames.de/images/gamestar/256/desktopia-_6190825.jpg',
-      title: 'Desktopia: Dieses Mittelalter-Aufbauspiel ergibt keinen Sinn',
-      text: 'Ein Mittelalterdorf am Bildschirmrand hochziehen, während wir Filme schauen oder im Netz surfen? Klingt spaßig, hat aber ein riesiges Problem.',
+      img: 'https://images.cgames.de/images/gamestar/256/secret-lab-titan-evo-2022-test-teaserbild_6199329.jpg',
+      title: 'Selten saß ich so gut, aber das hat seinen Preis: Secret Lab Titan Evo 2022 im Test',
     },
     {
-      img: 'https://images.cgames.de/images/gamestar/256/raft_6188337.jpg',
-      title: 'Ein neues Herr-der-Ringe-Spiel kommt von einem spannenden Studio',
-      text: 'Der Publisher Private Division kündigt an, dass ein Spiel in Tolkiens Welt geplant ist. Und das könnte sogar schon nächstes Jahr erscheinen.',
+      img: 'https://images.cgames.de/images/gamestar/256/thinkbook-plus-3-test-teaser_6199700.jpg',
+      title: 'Lenovo ThinkBook Plus Gen 3 im Test: Luxus dank mehr Bildfläche',
     },
     {
-      img: 'https://images.cgames.de/images/gamestar/256/two-point-campus-anzeige-titel01_6187955.jpg',
-      title: 'Die besten Mittelalter-Spiele: 22 historische Meilensteine',
-      text: 'Von Aufbauspielen über Echtzeitstrategie bis hin zu Multiplayer-Action: Das Mittelalter hat einige unserer liebsten Spiele hervorgebracht.',
+      img: 'https://images.cgames.de/images/gamestar/256/roccat-advertorial-titel-02_6199842.jpg',
+      title: 'Lenovo ThinkBook Plus Gen 3 im Test: Luxus dank mehr Bildfläche',
     },
   ];
 
   
 
-export default VideosHead;
+export default TechHead;

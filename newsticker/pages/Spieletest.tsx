@@ -1,11 +1,7 @@
 import * as React from 'react';
-import Typography from '../components/theme/Typography';
+import Typography from './modules/components/theme/Typography';
 import { styled, alpha } from '@mui/material/styles';
-import { Box, Button, Grid, Container, InputBase } from '@mui/material';
-import {
-  Link as RouterLink,
-  MemoryRouter,
-} from 'react-router-dom';
+import { Box, Grid, Container, InputBase } from '@mui/material';
 import { StaticRouter } from 'react-router-dom/server';
 import SearchIcon from '@mui/icons-material/Search';
 import { Theme, useTheme } from '@mui/material/styles';
@@ -213,7 +209,7 @@ function Router(props: { children?: React.ReactNode }) {
     return <StaticRouter location="/">{children}</StaticRouter>;
   }
 
-  return <MemoryRouter>{children}</MemoryRouter>;
+  return
 }
 
 function Spiele() {

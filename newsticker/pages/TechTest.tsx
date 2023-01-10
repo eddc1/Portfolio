@@ -48,14 +48,14 @@ const grid = {
 
 
 
-function TechToday() {
+function TechTest() {
   return (
     <Container sx={mainContainer}> 
         <Box
         component="section"
         sx={box}>
-                <Grid sx={{ pb: 4 }}>
-                    <Typography variant='subtitle1' sx={box}>Aktuell</Typography>
+                <Grid sx={{ pb: 4 }} xs={12}>
+                    <Typography variant='subtitle1' sx={box}>Test</Typography>
                 </Grid>
             <Grid container
                 direction="row"
@@ -102,31 +102,19 @@ const itemData = [
     }, 
     --!*/
     {
-      img: 'https://images.cgames.de/images/gamestar/256/balkonkraftwerk-aufbau-teaser_6199976.jpg',
-      title: 'Balkonkraftwerk installieren - So gehts in nur 8 Schritten',
+      img: 'https://images.cgames.de/images/gamestar/256/thinkbook-plus-3-test-teaser_6199700.jpg',
+      title: 'Lenovo ThinkBook Plus Gen 3 im Test: Luxus dank mehr Bildfläche',
     },
     {
-      img: 'https://images.cgames.de/images/gamestar/256/google-samsung-smartthings_6199905.jpg',
-      title: 'Schluss mit Smarthome-Inseln: Samsung und Google arbeiten dank Matter bald zusammen',
+      img: 'https://images.cgames.de/images/gamestar/256/secret-lab-titan-evo-2022-test-teaserbild_6199329.jpg',
+      title: 'Selten saß ich so gut, aber das hat seinen Preis: Secret Lab Titan Evo 2022 im Test',
     },
     {
-      img: 'https://images.cgames.de/images/gamestar/256/netflix-basisabomitwerbung-teaserbild_6199906.jpg',
-      title: 'Neues Netflix-Abo: Günstigstes Bezahl-Modell bis jetzt und doch bezahlt ihr teuer',
-    },
-    {
-      img: 'https://images.cgames.de/images/gamestar/256/one-ui-5-teaser_6199900.jpg',
-      title: 'Samsung One UI 5: Update kommt mit cleveren Funktionen, die ihr auch von Apple kennt',
-    },
-    {
-      img: 'https://images.cgames.de/images/gamestar/256/xbox-cloud-gaming-test-teaser_6199629.jpg',
-      title: 'Xbox Cloud Gaming ausprobiert: Wie gut laufen Spiele-Hits über den Browser?',
-    },
-    {
-      img: 'https://images.cgames.de/images/gamestar/256/besten-webcams-teaser_6190711.jpg',
-      title: 'Die besten Webcams für PC-Spieler und Streamer - Kaufberatung',
-    },
+      img: 'https://images.cgames.de/images/gamestar/256/rtx-4090-gigabyte-gaming-oc-teaser_6199443.jpg',
+      title: 'RTX 4090 Gaming OC im Test: Die schnellste Grafikkarte, die GameStar je getestet hat',
+    }
   ];
 
   
 
-export default TechToday;
+export default TechTest;

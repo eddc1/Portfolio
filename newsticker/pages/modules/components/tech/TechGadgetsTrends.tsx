@@ -79,7 +79,7 @@ function TechGadgetsTrends() {
         <Box
         component="section"
         sx={box}>
-            <Grid sx={{ pb: 4 }} xs={12}>
+            <Grid sx={{ pb: 4 }}>
               <Typography variant='subtitle1' sx={box}>Tech, Gadgets & Trends</Typography>
             </Grid>
             <Grid container

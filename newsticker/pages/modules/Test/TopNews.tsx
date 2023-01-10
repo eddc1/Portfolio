@@ -36,7 +36,7 @@ function ProductValues() {
               />
               </ButtonBase>
           </Grid>
-          <Grid xs={12} md={4} sx={{ pr: '1', pl: '1' }}>
+          <Grid item xs={12} md={4} sx={{ pr: '1', pl: '1' }}>
             <Typography variant="h6" sx={{ my: 4 }}>
                 Neuer Fußballmanager: Startelf könnte das Genre aufmischen
             </Typography>

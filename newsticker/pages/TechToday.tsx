@@ -54,7 +54,7 @@ function TechToday() {
         <Box
         component="section"
         sx={box}>
-                <Grid sx={{ pb: 4 }}>
+                <Grid sx={{ pb: 4 }} xs={12}>
                     <Typography variant='subtitle1' sx={box}>Aktuell</Typography>
                 </Grid>
             <Grid container

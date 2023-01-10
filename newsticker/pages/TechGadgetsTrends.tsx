@@ -25,10 +25,15 @@ const box = {
     justifyContent: 'center',
     justifyItem: 'center',
         button: {
-        width: '100%',
-        height: 'auto',
-        objectFit: 'cover',
+          width: '100%',
+          height: 'auto',
+          objectFit: 'cover',
         },
+        articles: {
+          borderBottom: '1px solid #303f9f',
+          paddingBottom: 1,
+        }
+    
 }
 
 const btn = {
@@ -68,21 +73,15 @@ const btnbase = {
 
 
 
-function VideosHead() {
+function TechGadgetsTrends() {
   return (
     <Container sx={mainContainer}> 
         <Box
         component="section"
         sx={box}>
-            
-                <Grid sx={{ pb: 4 }}>
-                    <Grid item xs={12}>
-                        <Typography variant='subtitle1'>GameStar Videos: alle Shows, Trailer &amp; Kanäle</Typography>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Typography sx={typography} variant='body1'>Auf unserer Video-Übersicht findest du alle Videos der GameStar-Redaktion (Tests, Previews, Events bzw. alle redaktionellen Videos) sowie aktuelle Trailer zu Spielen und Kino-Filmen. Zusätzlich gibt es regelmäßige Shows, Special-Formate und Videos von ausgewählten Partner-Kanälen.</Typography>
-                    </Grid>
-                </Grid>
+            <Grid sx={{ pb: 4 }} xs={12}>
+              <Typography variant='subtitle1' sx={box}>Tech, Gadgets & Trends</Typography>
+            </Grid>
             <Grid container
                 direction="row"
                 justifyContent="center"
@@ -126,6 +125,7 @@ function VideosHead() {
                         </Grid>
                 ))}
                     <Grid 
+                            sx={box.articles}
                             container
                             direction="row"
                             justifyContent="center"
@@ -142,9 +142,6 @@ function VideosHead() {
                                 <Typography variant="subtitle2" pt={2}>
                                 {`${item.title}`}
                                 </Typography>
-                                <Typography sx={typography}>                
-                                {`${item.text}`}
-                                </Typography>
                             </Box>
                         </Grid>
                         ))}
@@ -155,39 +152,39 @@ function VideosHead() {
   );
 }
 
+
+
 const topHeaderData = [
     {
-      img: 'https://images.cgames.de/images/gamestar/210/gs-steam-most-wanted_6146235.jpg',
-      title: 'Steam Wunschliste: Die aktuell meistgewünschten PC-Spiele',
-      text: 'Steam Most Wanted: Welche kommenden PC-Spiele werden am heißesten erwartet? Wir haben für euch die Top 15 der am meisten gewünschten Steam-Spiele zusammengefasst.',
+      img: 'https://images.cgames.de/images/gamestar/210/balkonkraftwerk-aufbau-teaser_6199976.jpg',
+      title: 'Balkonkraftwerk installieren - So gehts in nur 8 Schritten',
+      text: 'Die Stromrechnung durch selbstproduzierten Strom senken - das ist mit einem Balkonkraftwerk recht einfach. Wir zeigen, wie es geht und geben Tipps beim Aufbau.',
     },
   ];
   
 
 const itemData = [
     /*!-- 
+     <Typography variant='subtitle1' sx={box.headline}>Freitag, 30.09.2022</Typography>
       img: 'https://images.cgames.de/images/gamestar/210/gs-steam-most-wanted_6146235.jpg',
       title: 'Steam Wunschliste: Die aktuell meistgewünschten PC-Spiele',
       text: 'Steam Most Wanted: Welche kommenden PC-Spiele werden am heißesten erwartet? Wir haben für euch die Top 15 der am meisten gewünschten Steam-Spiele zusammengefasst.',
     }, 
     --!*/
     {
-      img: 'https://images.cgames.de/images/gamestar/256/desktopia-_6190825.jpg',
-      title: 'Desktopia: Dieses Mittelalter-Aufbauspiel ergibt keinen Sinn',
-      text: 'Ein Mittelalterdorf am Bildschirmrand hochziehen, während wir Filme schauen oder im Netz surfen? Klingt spaßig, hat aber ein riesiges Problem.',
+      img: 'https://images.cgames.de/images/gamestar/256/balkonkraftwerk-%C3%BCber-600w-teaser_6199911.jpg',
+      title: 'Balkonkraftwerk selber bauen: Module und Komplettset für Solaranlage über 600W',
     },
     {
-      img: 'https://images.cgames.de/images/gamestar/256/raft_6188337.jpg',
-      title: 'Ein neues Herr-der-Ringe-Spiel kommt von einem spannenden Studio',
-      text: 'Der Publisher Private Division kündigt an, dass ein Spiel in Tolkiens Welt geplant ist. Und das könnte sogar schon nächstes Jahr erscheinen.',
+      img: 'https://images.cgames.de/images/gamestar/256/amazo…google-pixel-watch-13102022-titelbild_6199613.jpg',
+      title: 'Google Verkaufsstart: Hier könnt ihr euch ab sofort das Pixel 7, Pixel 7 Pro und die Pixel Watch sichern',
     },
     {
-      img: 'https://images.cgames.de/images/gamestar/256/two-point-campus-anzeige-titel01_6187955.jpg',
-      title: 'Die besten Mittelalter-Spiele: 22 historische Meilensteine',
-      text: 'Von Aufbauspielen über Echtzeitstrategie bis hin zu Multiplayer-Action: Das Mittelalter hat einige unserer liebsten Spiele hervorgebracht.',
+      img: 'https://images.cgames.de/images/gamestar/256/kaffe…n-siebtr%C3%A4germaschinene-prime-day_6199195.jpg',
+      title: 'Kaffeevollautomaten & Siebträgermaschinen im Prime Day Angebot: Bis zu 50% sparen',
     },
   ];
 
   
 
-export default VideosHead;
+export default TechGadgetsTrends;

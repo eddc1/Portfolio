@@ -141,7 +141,7 @@ function Artikelubersicht() {
     <Box
       component="section"
       sx={box}>
-        <Grid sx={grid} xs={12} rowSpacing={1} columnSpacing={3} container>
+        <Grid sx={grid} rowSpacing={1} columnSpacing={3} container>
             <Grid item container direction="row" spacing={0}>
                 <Grid item sx={daynewslist} sm={12} md={8}>
                     <Container sx={container}>
@@ -165,7 +165,7 @@ function Artikelubersicht() {
                             </Grid>
                         </Grid>
                     </Container>
-                    <Grid xs={12}>
+                    <Grid item xs={12}>
                     {itemData.map((item) => (
                         <Container sx={topnews}>
                             <Grid
@@ -197,7 +197,7 @@ function Artikelubersicht() {
                             </Grid>
                         </Container>
                         ))}
-                        <Grid container xs={11.4} direction="row" sx={{ pl: 3 }}>
+                        <Grid item container xs={11.4} direction="row" sx={{ pl: 3 }}>
                             <Button size="small">
                                 <Grid item>
                                     <Typography variant='body2'>mehr anzeigen</Typography>

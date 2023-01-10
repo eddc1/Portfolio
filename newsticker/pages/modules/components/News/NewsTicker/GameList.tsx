@@ -55,13 +55,13 @@ function GameList() {
     <Box
       component="section"
       sx={box}>
-        <Grid container xs={12} >
+        <Grid item container xs={12} >
             <Grid item container direction="row">
                 <Grid item sx={daynewslist} sm={12} md={8}>
                     <Grid container>
                         <Grid item>
                             <Container>
-                                <Grid container xs={12} sx={{ maxWidth: '100%' }}>
+                                <Grid item container xs={12} sx={{ maxWidth: '100%' }}>
                                     <Grid item xs={12}>
                                         <Typography variant='subtitle1' sx={box.headline}>Freitag, 30.09.2022</Typography>
                                     </Grid>
@@ -81,7 +81,7 @@ function GameList() {
                                         </Grid>
                                     ))}
                                 </Grid>
-                                <Grid container xs={12} sx={{ maxWidth: '100%', paddingTop: 4 }}>
+                                <Grid item container xs={12} sx={{ maxWidth: '100%', paddingTop: 4 }}>
                                     <Grid item xs={12}>
                                         <Typography variant='subtitle1' sx={box.headline}>Donnerstag, 29.09.2022</Typography>
                                     </Grid>

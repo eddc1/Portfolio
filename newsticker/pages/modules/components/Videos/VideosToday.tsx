@@ -94,13 +94,13 @@ function VideoToday() {
     <Box
       component="section"
       sx={box}>
-        <Grid sx={grid} xs={12} columnSpacing={3} container>
+        <Grid sx={grid} columnSpacing={3} container>
             <Grid item container direction="row">
                 <Grid item xs={11.75}>
                     <Typography variant='subtitle1' sx={box.headline}>Freitag, 30.09.2022</Typography>
                 </Grid>
                 <Grid item sx={daynewslist} xs={12}>
-                    <Grid xs={12}>
+                    <Grid item xs={12}>
                     {itemData.map((item) => (
                             <Grid
                                 container
@@ -131,7 +131,7 @@ function VideoToday() {
                                 </Grid>
                             </Grid>
                         ))}
-                        <Grid container xs={12} direction="row" sx={{ pl: 3 }}>
+                        <Grid item container xs={12} direction="row" sx={{ pl: 3 }}>
                             <Button size="small">
                                 <Grid item>
                                     <Typography variant='body2'>mehr anzeigen</Typography>

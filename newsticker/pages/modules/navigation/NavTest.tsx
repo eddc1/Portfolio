@@ -89,8 +89,7 @@ export default function PrimarySearchAppBar() {
       onClose={handleMobileMenuClose}
     >
       {pages.map((page) => (
-        <MenuItem
-              key={page}>          
+        <MenuItem>          
             <Link style={{ textDecoration: "none", color: "black", paddingRight: 30 }} href={`/${page}`}>
             {page}
             </Link>

@@ -54,7 +54,7 @@ function TechGuides() {
         <Box
         component="section"
         sx={box}>
-                <Grid sx={{ pb: 4 }} xs={12}>
+                <Grid sx={{ pb: 4 }}>
                     <Typography variant='subtitle1' sx={box}>Guides</Typography>
                 </Grid>
             <Grid container
