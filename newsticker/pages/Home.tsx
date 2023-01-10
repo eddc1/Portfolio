@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Container, Box } from '@mui/material';
-import Gridhead from '../components/homepage/Gridhead';
-import GridTopTips from '../components/homepage/GridTopTips';
-import TabsList from '../components/homepage/TabsList';
-import GridTech from '../components/homepage/GridTech';
-import GridMosteView from '../components/homepage/GridMosteView';
-import GridBestGamingDeals from '../components/homepage/GridBestGamingDeals';
+import Gridhead from './modules/components/homepage/Gridhead';
+import GridTopTips from './modules/components/homepage/GridTopTips';
+import TabsList from './modules/components/homepage/TabsList';
+import GridTech from './modules/components/homepage/GridTech';
+import GridMosteView from './modules/components/homepage/GridMosteView';
+import GridBestGamingDeals from './modules/components/homepage/GridBestGamingDeals';
 
 
 function Home() {
