@@ -5,6 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Logo from '../assets/logo.png';
+import Image from 'next/image'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -91,8 +92,8 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem key="{profile}" onClick={handleMenuClose}>Profile</MenuItem>
+      <MenuItem key="{account}" onClick={handleMenuClose}>My account</MenuItem>
     </Menu>
   );
   //Mobile
@@ -157,7 +158,7 @@ export default function PrimarySearchAppBar() {
       <AppBar sx={{bgcolor: 'primary.dark' }} position="static">
         <Toolbar sx={{ justifyContent: 'space-between', marginRight: 6, marginLeft: 6 }} >
           <IconButton disableRipple size="small" sx={{ "&.MuiButtonBase-root:hover": { bgcolor: "transparent" } }}>
-            <img width="140" height="50"  alt="logo-gameeye" src={Logo} />
+            <Image width="140" height="50"  alt="logo-gameeye" src={Logo} />
           </IconButton>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'center', paddingRight: '1rem' }}>
             <Link

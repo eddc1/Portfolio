@@ -6,8 +6,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider, EmotionCache } from '@emotion/react';
 import theme from './config/theme';
 import createEmotionCache from './config/createEmotionCache';
-import './index.css';
-import './App.css';
+import '../styles/index.css';
+import '../styles/App.css';
 import Navbar from "./modules/navigation/NavTest";
 import AppFooter from "./modules/navigation/AppFooter";
 

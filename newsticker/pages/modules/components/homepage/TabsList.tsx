@@ -25,9 +25,10 @@ export default function ScrollableTabsButtonAuto() {
             scrollButtons="auto"
             aria-label="scrollable auto tabs example"
         >
-          {itemData.map((item) => (
+          {itemData.map((item, i) => (
           <Tab
                 wrapped
+                key={i}
                 sx={{ width: 210, transformBox: "fill-box", flexDirection: "row",  }}
                  icon={ <img
                 src={`${item.img}?w=248&fit=crop&auto=format`}

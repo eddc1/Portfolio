@@ -88,12 +88,11 @@ export default function PrimarySearchAppBar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      {pages.map((page) => (
-        <MenuItem>          
+      {pages.map((page, i) => (
+        <MenuItem key={i}>          
             <Link style={{ textDecoration: "none", color: "black", paddingRight: 30 }} href={`/${page}`}>
             {page}
             </Link>
-        
         </MenuItem>
       ))}
     </Menu>
@@ -104,14 +103,14 @@ export default function PrimarySearchAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar sx={{bgcolor: 'primary.dark' }} position="static">
         <Toolbar sx={{  justifyItems: 'center', justifyContent: 'space-between', marginRight: 6, marginLeft: 6 }} >
-          <IconButton disableRipple size="small" sx={{ "&.MuiButtonBase-root:hover": { bgcolor: "transparent" }}}>
+          <Box>
             <Link href="/">
                 <Image src={Logo} width={140} height={50} alt="logo-gameeye" />
             </Link>
-          </IconButton>
+          </Box>
           <Box sx={{ flex: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center', paddingRight: '1rem' }}>
-            {pages.map((page) => (
-              <Typography>
+            {pages.map((page, i) => (
+              <Typography key={i}>
                   <Link style={{ textDecoration: "none", color: "white", paddingRight: 30 }} href={`/${page}`}>
                   {page}
                   </Link>

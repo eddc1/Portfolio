@@ -29,8 +29,8 @@ function Important() {
               alignItems="center"
               justifyContent="center"
             >
-            {importantList.map((page) => (
-              <Grid item xs="auto" sx={{ display: 'inline-flex', }}>
+            {importantList.map((page, i) => (
+              <Grid item key={i} xs="auto" sx={{ display: 'inline-flex', }}>
                 <Link style={{ textDecoration: "none", color: "white", paddingRight: 15 }} href={`/${page}`}>
                   {page}
                 </Link>
@@ -50,8 +50,8 @@ function Social() {
     // flexWrap: wrap sorgt dafür dass die Grid Items nicht über dem Bildschierm überragen.
     <React.Fragment>
         <Box sx={{ flex: 1, display: { xs: 'row', md: 'flex' }, whiteSpace: 'pre-wrap', flexWrap: 'wrap'  }}>
-          {socialList.map((page) => (
-            <Grid item sx={{ display: 'inline-flex' }}>
+          {socialList.map((page, i) => (
+            <Grid item key={i} sx={{ display: 'inline-flex' }}>
               <Link style={{ textDecoration: "none", color: "white", paddingRight: 15 }} href={`/${page}`}>
                 {page}
               </Link>

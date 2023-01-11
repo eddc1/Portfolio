@@ -68,9 +68,10 @@ function Gridhead() {
       component="section"
       sx={box}>
           <Container sx={container}>
-            {topHeaderData.map((item) => (
+            {topHeaderData.map((item, i) => (
               <Grid
-                sx={grid}
+                sx={grid} 
+                key={i}
                 container
                 spacing={6}>
                 <Grid item sm={12} md={8}>
@@ -114,8 +115,8 @@ function Gridhead() {
                 justifyContent="center"
                 pb={6}
                 spacing={3}>
-            {itemData.map((item) => (
-            <Grid item sx={grid} sm={12} md={4}>
+            {itemData.map((item, i) => (
+            <Grid item key={i} sx={grid} sm={12} md={4}>
               <Box sx={item}>
                 <Box
                   component="img"
