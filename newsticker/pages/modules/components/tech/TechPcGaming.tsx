@@ -88,6 +88,7 @@ function TechPcGaming() {
                 pb={6}>
                 {topHeaderData.map((item) => (
                         <Grid
+                            key={item.title}
                             sx={grid}
                             container
                             spacing={6}>
@@ -131,7 +132,7 @@ function TechPcGaming() {
                             justifyContent="center"
                             spacing={2}>
                         {itemData.map((item) => (
-                        <Grid item sx={grid} sm={12} md={4}>
+                        <Grid item key={item.title} sx={grid} sm={12} md={4}>
                             <Box sx={item}>
                                 <Box
                                 component="img"

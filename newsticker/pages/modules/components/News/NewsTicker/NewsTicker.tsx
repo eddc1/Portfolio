@@ -94,7 +94,7 @@ function NewsTicker() {
                 <Typography variant='subtitle1'>Aktuelle Videos</Typography>
             </Grid>
             {itemData.map((item) => (
-                <Grid sx={grid} sm={12} md={3} spacing={5}>
+                <Grid  key={item.title} sx={grid} sm={12} md={3} spacing={5}>
                         <Grid item xs={12}>
                             <Box
                             component="img"

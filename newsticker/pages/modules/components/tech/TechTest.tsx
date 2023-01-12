@@ -68,7 +68,7 @@ function TechTest() {
                             justifyContent="center"
                             spacing={2}>
                         {itemData.map((item) => (
-                            <Grid item sx={grid} sm={12} md={4}>
+                            <Grid item key={item.title} sx={grid} sm={12} md={4}>
                                 <Box sx={item}>
                                     <Box
                                     component="img"

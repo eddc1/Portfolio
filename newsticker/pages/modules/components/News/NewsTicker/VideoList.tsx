@@ -64,8 +64,8 @@ function VideoList() {
                                         <Typography variant='subtitle1' sx={box.headline}>Freitag, 30.09.2022</Typography>
                                     </Grid>
                                     {contentListFriday.map((item) => (
-                                        <Grid item container direction="row" sx={{ borderBottom: '1px solid #303f9f' }}>
-                                            <ListItemButton key={item.title}>
+                                        <Grid item key={item.title} container direction="row" sx={{ borderBottom: '1px solid #303f9f' }}>
+                                            <ListItemButton>
                                                 <Grid item sx={{ pr: 2 }}>
                                                     <Typography variant='body2'>{`${item.time}`}</Typography>
                                                 </Grid>
@@ -84,8 +84,8 @@ function VideoList() {
                                         <Typography variant='subtitle1' sx={box.headline}>Donnerstag, 29.09.2022</Typography>
                                     </Grid>
                                     {contentListThursday.map((item) => (
-                                        <Grid item container direction="row" sx={{ borderBottom: '1px solid #303f9f' }}>
-                                            <ListItemButton key={item.title}>
+                                        <Grid item key={item.title} container direction="row" sx={{ borderBottom: '1px solid #303f9f' }}>
+                                            <ListItemButton>
                                                 <Grid item sx={{ pr: 2 }}>
                                                     <Typography  variant='body2'>{`${item.time}`}</Typography>
                                                 </Grid>

@@ -102,8 +102,8 @@ function AdCryptoHitlisten() {
                     <Grid item xs={12}>
                             <Box sx={{ width: 'auto', height: 'auto',  paddingTop: 2, paddingBottom: 2 }}>
                                 {contentListTopCrypto.map((item) => (
-                                    <Grid item container direction="row" sx={{ }}>
-                                        <ListItemButton key={item.text}>
+                                    <Grid item key={item.text} container direction="row" sx={{ }}>
+                                        <ListItemButton>
                                             <Grid item sx={{ pr: 2 }}>
                                                 <Typography sx={{ color: '#303f9f' }} variant='subtitle1'>{`${item.number}`}</Typography>
                                             </Grid>
@@ -145,8 +145,8 @@ function AdCryptoHitlisten() {
                     <Grid item xs={12}>
                             <Box sx={{ width: 'auto', height: 'auto',  paddingTop: 2, paddingBottom: 2 }}>
                                 {contentListTopCryptoVideo.map((item) => (
-                                    <Grid item container direction="row">
-                                        <ListItemButton key={item.text}>
+                                    <Grid item key={item.text} container direction="row">
+                                        <ListItemButton>
                                             <Grid item xs={12} sx={{ pr: 2 }}>
                                                 <ButtonBase sx={{ width: 'auto', height: 'auto' }}>
                                                     <Img alt="Wow" src={`${item.image}`}>

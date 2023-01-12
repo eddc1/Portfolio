@@ -166,7 +166,7 @@ function CryptoPreviews() {
                     </Container>
                     <Grid item xs={12}>
                     {itemData.map((item) => (
-                        <Container sx={topnews}>
+                        <Container key={item.title} sx={topnews}>
                             <Grid
                                 container
                                 sx={topnews.grid}

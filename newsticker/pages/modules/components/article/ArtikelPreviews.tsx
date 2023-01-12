@@ -166,7 +166,7 @@ function ArtikelPreviews() {
                     </Container>
                     <Grid item xs={12}>
                     {itemData.map((item) => (
-                        <Container sx={topnews}>
+                        <Container key={item.text} sx={topnews}>
                             <Grid
                                 container
                                 sx={topnews.grid}

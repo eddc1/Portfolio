@@ -89,6 +89,7 @@ function VideosHead() {
                 pb={6}>
                 {topHeaderData.map((item) => (
                         <Grid
+                            key={item.text}
                             sx={grid}
                             container
                             spacing={6}>
@@ -103,7 +104,7 @@ function VideosHead() {
                                     />
                                 </ButtonBase>
                             </Grid>
-                            <Grid item sm={12} md={4}>
+                            <Grid item key={item.text} sm={12} md={4}>
                                 <Box sx={grid.box}>
                                     <Typography variant="subtitle1">
                                     {`${item.title}`}
@@ -131,7 +132,7 @@ function VideosHead() {
                             justifyContent="center"
                             spacing={2}>
                         {itemData.map((item) => (
-                        <Grid item sx={grid} sm={12} md={4}>
+                        <Grid item key={item.text} sx={grid} sm={12} md={4}>
                             <Box sx={item}>
                                 <Box
                                 component="img"

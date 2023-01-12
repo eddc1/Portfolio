@@ -1,12 +1,12 @@
-import React, { StrictMode } from 'react';
+import React from 'react';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 export default function Index() {
   return(
-    <StrictMode>
+    <React.StrictMode>
         <App />
-    </StrictMode>
+    </React.StrictMode>
   );
 }
 

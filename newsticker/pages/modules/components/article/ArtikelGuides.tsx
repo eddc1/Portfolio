@@ -167,7 +167,7 @@ function ArtikelGuides() {
                     </Container>
                     <Grid>
                     {itemData.map((item) => (
-                        <Container sx={topnews}>
+                        <Container key={item.text} sx={topnews}>
                             <Grid
                                 container
                                 sx={topnews.grid}
