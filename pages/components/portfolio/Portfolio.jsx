@@ -11,28 +11,28 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Crypto Currency Dashboard & Financial Visualiztion',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/'
+    title: "Programmer's Portfolio",
+    github: "https://github.com/eddc1/Portfolio",
+    demo: "https://dribbble.com/shots/"
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Crypto Currency Dashboard & Financial Visualiztion',
-    github: 'https://github.com',
+    title: 'Blog Potwarmer',
+    github: 'https://github.com/eddc1/Potwarmer',
     demo: 'https://dribbble.com/shots/'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Crypto Currency Dashboard & Financial Visualiztion',
+    title: 'News Ticker',
     github: 'https://github.com',
     demo: 'https://dribbble.com/shots/'
     },
   {
     id: 4,
     image: IMG4,
-    title: 'Crypto Currency Dashboard & Financial Visualiztion',
+    title: 'Foxrunner',
     github: 'https://github.com',
     demo: 'https://dribbble.com/shots/'
   },

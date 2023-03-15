@@ -19,23 +19,23 @@ import 'swiper/css/pagination';
 const data = [
   {
     avatar: Avt1,
-    name: 'Tina Snow',
-    review: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
+    name: 'Sarah Smith',
+    review: "Edward's web development expertise was evident from the start. He was responsive, attentive to detail, and met all deadlines. Our website looks better than ever, and we highly recommend him for any web development needs."
   },
   {
     avatar: Avt2,
-    name: 'Tina Snow',
-    review: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
+    name: 'Jack Brown',
+    review: "Edward's web development skills are top-notch. He's reliable, responsive, and always delivers high-quality work. I would definitely recommend him to anyone looking for a talented developer."
   },
   {
     avatar: Avt3,
-    name: 'Tina Snow',
-    review: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
+    name: 'Michael Lee',
+    review: "I had the pleasure of working with Edward on a web development project, and I couldn't be happier with the results. He's a true professional, and his expertise in the field is exceptional. I would definitely work with Edward again in the future"
   },
   {
     avatar: Avt4,
     name: 'Tina Snow',
-    review: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
+    review: "Edward is an outstanding programmer who goes above and beyond to ensure the success of his projects. He's easy to work with and always delivers on time. I would highly recommend Edward to anyone looking for a skilled web developer."
   }
 ]
 
@@ -51,7 +51,8 @@ const Testimonials = () => {
           modules={[Pagination]}
           spaceBetween={40}
           slidesPerView={1}
-          navigation
+          prevButton={<div className="swiper-button-prev"></div>}
+          nextButton={<div className="swiper-button-next"></div>}
           pagination={{ clickable: true }}>
           {
             data.map(({ avatar, name, review }, index) => {
