@@ -12,14 +12,14 @@ const Header = () => {
           <Container>
             <h5 component='div'>Hello I'm</h5>
             <h1 component='div'>Edward Habermann</h1>
-            <h5 componente='div'>Fullstack Developer</h5>
+            <h5 componente='div'>Frontend Developer</h5>
           </Container>
           <CTA/>
-          <HeaderSocials/>
-          <div className='me'>
+          {/* <HeaderSocials/> */}
+          {/* <div className='me'>
             <img src={ME} alt='me'></img>
-          </div>
-          <a href='#contact' className='scroll__down'>Scrolle Down</a>
+          </div> */}
+          {/* <a href='#contact' className='scroll__down'>Scrolle Down</a> */}
         </Box>
       </div>        
   );
