@@ -26,30 +26,30 @@ const data = [
     id: 3,
     image: IMG3,
     title: 'News Ticker',
-    github: 'https://github.com',
+    github: 'https://github.com/eddc1/NewsTicker',
     demo: 'https://dribbble.com/shots/'
     },
-  {
-    id: 4,
-    image: IMG4,
-    title: 'Foxrunner',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/'
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Crypto Currency Dashboard & Financial Visualiztion',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/'
-  }, 
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Crypto Currency Dashboard & Financial Visualiztion',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/'
-  }      
+  // {
+  //   id: 4,
+  //   image: IMG4,
+  //   title: 'Foxrunner',
+  //   github: 'https://github.com',
+  //   demo: 'https://dribbble.com/shots/'
+  // },
+  // {
+  //   id: 5,
+  //   image: IMG5,
+  //   title: 'Crypto Currency Dashboard & Financial Visualiztion',
+  //   github: 'https://github.com',
+  //   demo: 'https://dribbble.com/shots/'
+  // }, 
+  // {
+  //   id: 6,
+  //   image: IMG6,
+  //   title: 'Crypto Currency Dashboard & Financial Visualiztion',
+  //   github: 'https://github.com',
+  //   demo: 'https://dribbble.com/shots/'
+  // }      
 ]
 
 const Portfolio = () => {
